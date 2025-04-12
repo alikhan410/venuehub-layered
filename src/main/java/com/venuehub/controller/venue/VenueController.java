@@ -36,14 +36,6 @@ public class VenueController implements VenueApi {
         this.venueService = venueService;
     }
 
-//    @PostMapping("/images/{venueId}")
-//    public ResponseEntity<ImageAddedResponse> saveVenueImages(@PathVariable("venueId") long venueId, MultipartFile[] files, @AuthenticationPrincipal Jwt jwt) throws IOException {
-//        logger.info("Received request to save {} images for the venue with id: {}", files.length, venueId);
-//        SecurityChecks.vendorCheck(jwt);
-//        imageService.saveImage(files, venueId, jwt.getSubject());
-//        return new ResponseEntity<>(new ImageAddedResponse("success"), HttpStatus.CREATED);
-//    }
-
     @GetMapping("/venue/{id}")
     public ResponseEntity<VenueDto> getVenueById(@PathVariable Long id) {
         logger.info("Received request to get venue with id: {}", id);
