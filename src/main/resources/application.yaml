@@ -26,7 +26,8 @@ spring:
   #    hikari:
   #      maximum-pool-size: 7
   #      register-mbeans: true
-      url: jdbc:mysql://localhost:3306/venuehub
+#      url: jdbc:mysql://localhost:3306/venuehub
+      url: jdbc:mysql://0.tcp.ap.ngrok.io:17392/venuehub
       username: ali
       password: "@Li4103568"
       driver-class-name: com.mysql.cj.jdbc.Driver
